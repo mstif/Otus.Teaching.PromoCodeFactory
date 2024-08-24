@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build Otus.Teaching.PromoCodeFactory.WebHost/Otus.Teaching.PromoCodeFactory.WebHost.csproj --no-restore
     - name: Test
-      run: dotnet test ./Otus.Teaching.PromoCodeFactory.sln --no-build --verbosity normal
+      run: dotnet test ./Otus.Teaching.PromoCodeFactory.sln  --verbosity normal
