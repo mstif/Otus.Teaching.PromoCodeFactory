@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./Otus.Teaching.PromoCodeFactory.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build Otus.Teaching.PromoCodeFactory.WebHost/Otus.Teaching.PromoCodeFactory.WebHost.csproj --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./Otus.Teaching.PromoCodeFactory.sln --no-build --verbosity normal
